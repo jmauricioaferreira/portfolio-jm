@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Header } from "./components/Header";
+import { Contact } from "./components/Contact";
 
 import Myself from "../../public/memyself.jpg";
 
@@ -65,7 +66,7 @@ export default function Home() {
         </section>
         <section
           id="skills and tools"
-          className="flex justify-between text-gray300 w-full mt-8  align-middle min-h-screen px-32"
+          className="flex justify-between items-center text-gray300 w-full mt-8  align-middle min-h-screen px-32"
         >
           <div>
             <h1 className=" text-7xl font-bold text-green500 opacity-50">
@@ -77,13 +78,9 @@ export default function Home() {
 
         <section
           id="contact"
-          className="flex justify-between text-gray300 w-full mt-8  bg-darkBlue  align-middle min-h-screen px-32"
+          className="flex justify-between items-center text-gray300 w-full mt-8  bg-darkBlue  align-middle min-h-screen px-32"
         >
-          <div>
-            <h1 className=" text-7xl font-bold text-green500 opacity-50">
-              contact
-            </h1>
-          </div>
+          <Contact />
         </section>
       </main>
     </>
