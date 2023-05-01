@@ -2,11 +2,13 @@
   "name": "portfolio-jm",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jmauricioaferreira.github.io/portfolio-jm/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && next export && npx gh-pages -d out"
   },
   "dependencies": {
     "@next/font": "^13.3.2",
