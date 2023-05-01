@@ -39,7 +39,7 @@ export default function Home() {
             </h1>
 
             <div className="flex flex-col my-6">
-              <p className="my-2">I'm José Mauricio.</p>
+              <p className="my-2">{"I'm José Mauricio."}</p>
               <p className="my-2">
                 A full-stack developer with a focus on
                 <strong> front-end</strong>. I have a background in civil
@@ -47,8 +47,8 @@ export default function Home() {
                 programming.
               </p>
               <p className="my-2">
-                I love creating intuitive and visually appealing interfaces that
-                have a positive impact on people's lives.
+                {`I love creating intuitive and visually appealing interfaces that
+            have a positive impact on people's lives.`}
               </p>
               <p className="my-2">
                 In my free time, I enjoy traveling, being in nature, and
