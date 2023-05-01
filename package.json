@@ -1,13 +1,13 @@
 {
   "name": "portfolio-jm",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "portfolio-jm",
+  "homepage": "https://jmauricioaferreira.github.io/portfolio-jm/",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && next export && npx gh-pages -d out"
   },
   "dependencies": {
     "@next/font": "^13.3.2",
@@ -26,6 +26,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@types/react-scroll": "^1.8.6"
+    "@types/react-scroll": "^1.8.6",
+    "gh-pages": "^5.0.0"
   }
 }
