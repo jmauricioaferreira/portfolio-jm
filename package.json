@@ -5,10 +5,10 @@
   "homepage": "https://jmauricioaferreira.github.io/portfolio-jm/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && next export && npx gh-pages -d out"
+    "deploy": "next build"
   },
   "dependencies": {
     "@next/font": "^13.3.2",
