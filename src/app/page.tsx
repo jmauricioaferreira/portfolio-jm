@@ -4,6 +4,8 @@ import { Contact } from "./components/Contact";
 
 import Myself from "../../public/memyself.jpg";
 
+import './globals.css'
+
 export default function Home() {
   return (
     <>

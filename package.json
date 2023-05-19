@@ -2,7 +2,6 @@
   "name": "portfolio-jm",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jmauricioaferreira.github.io/portfolio-jm/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
