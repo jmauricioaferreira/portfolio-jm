@@ -80,7 +80,7 @@ export const SkillsAndTools = ({}) => {
       className="flex justify-between items-center text-gray-300 w-full mt-8 align-middle min-h-screen px-8 md:px-32"
     >
       <div className="w-full">
-        <h1 className="text-4xl md:text-7xl font-bold text-green-500 opacity-50">
+        <h1 className="text-4xl md:text-7xl font-bold text-green500 opacity-50">
           skills and tools
         </h1>
         <p className="my-2 md:m-4">

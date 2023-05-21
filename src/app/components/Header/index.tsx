@@ -1,5 +1,4 @@
 'use client';
-import { Link, animateScroll as scroll } from 'react-scroll';
 import { MenuItem } from './components/MenuItem';
 import { Logo } from './components/Logo';
 import { useState } from 'react';
@@ -9,6 +8,7 @@ export const Header = () => {
     'home',
     'about me',
     'skills and tools',
+    'personal projects',
     'contact',
   ];
 
