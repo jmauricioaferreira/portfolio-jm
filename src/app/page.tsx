@@ -1,17 +1,21 @@
-import Image from "next/image";
-import { Header } from "./components/Header";
-import { Contact } from "./components/Contact";
+import Image from 'next/image';
+import { Header } from './components/Header';
+import { Contact } from './components/Contact';
 
-import Myself from "../../public/memyself.jpg";
+import Myself from '../../public/memyself.jpg';
 
-import './globals.css'
+import './globals.css';
+import { SkillsAndTools } from './components/SkillsAndTools';
 
 export default function Home() {
   return (
     <>
       <Header />
       <main className="flex flex-col justify-center items-center bg-darkNavy  h-full w-full bg-gridPattern bg-contain bg-fixed bg-repeat ">
-        <section className="flex flex-col text-gray300 justify-center items-start w-10/12	 min-h-screen max-w-screen-xl px-28">
+        <section
+          id="home"
+          className="flex flex-col text-gray300 justify-center items-start w-10/12	 min-h-screen max-w-screen-xl px-28"
+        >
           <div>
             <p className="font-4 text-green500 animate-fade-in-down">
               Hello, my name is
@@ -67,16 +71,12 @@ export default function Home() {
             />
           </div>
         </section>
+
         <section
           id="skills and tools"
           className="flex justify-between items-center text-gray300 w-full mt-8  align-middle min-h-screen px-32"
         >
-          <div>
-            <h1 className=" text-7xl font-bold text-green500 opacity-50">
-              skills and tools
-            </h1>
-            <div className="flex flex-col w-2/3"></div>
-          </div>
+          <SkillsAndTools />
         </section>
 
         <section
@@ -86,6 +86,9 @@ export default function Home() {
           <Contact />
         </section>
       </main>
+      <footer>
+        <p className="text-center">©2023 José Mauricio A. Ferreira</p>
+      </footer>
     </>
   );
 }

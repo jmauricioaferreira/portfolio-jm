@@ -1,10 +1,15 @@
-"use client";
-import { Link, animateScroll as scroll } from "react-scroll";
-import { MenuItem } from "./components/MenuItem";
-import { Logo } from "./components/Logo";
+'use client';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import { MenuItem } from './components/MenuItem';
+import { Logo } from './components/Logo';
 
 export const Header = () => {
-  const itemsOfMenu: string[] = ["about me", "skills and tools", "contact"];
+  const itemsOfMenu: string[] = [
+    'home',
+    'about me',
+    'skills and tools',
+    'contact',
+  ];
 
   const handleClickLogo = () => {
     scroll.scrollTo(0);
@@ -15,7 +20,6 @@ export const Header = () => {
       <div onClick={(e) => handleClickLogo()} className="flex cursor-pointer ">
         <Logo />
       </div>
-
       <ul className="flex space-x-5">
         {itemsOfMenu.map((item) => (
           <MenuItem key={item} name={item} />
