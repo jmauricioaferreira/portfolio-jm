@@ -1,9 +1,4 @@
 export const Contact = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Lógica de envio de e-mail
-  };
-
   return (
     <section
       id="contact"
