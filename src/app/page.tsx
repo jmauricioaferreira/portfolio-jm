@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import { Header } from './components/Header';
 import { Contact } from './components/Contact';
@@ -11,20 +13,20 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex flex-col justify-center items-center bg-darkNavy  h-full w-full bg-gridPattern bg-contain bg-fixed bg-repeat ">
+      <main className="flex flex-col justify-center items-center bg-darkNavy  h-full w-full bg-gridPattern bg-contain bg-fixed bg-repeat">
         <section
           id="home"
-          className="flex flex-col text-gray300 justify-center items-start w-10/12	 min-h-screen max-w-screen-xl px-28"
+          className="flex flex-col text-gray-300 justify-center items-start w-10/12 min-h-screen max-w-screen-xl px-6 md:px-12 lg:px-24 xl:px-48"
         >
           <div>
             <p className="font-4 text-green500 animate-fade-in-down">
               Hello, my name is
             </p>
-            <h1 className="mt-5 mb-1 text-7xl font-bold animate-fade-in-down">
+            <h1 className="mt-5 mb-1 text-5xl md:text-7xl font-bold animate-fade-in-down">
               José Mauricio.
             </h1>
             <div className="opacity-50">
-              <h1 className=" text-6xl font-bold text-green500  animate-fade-in-down">
+              <h1 className="text-4xl md:text-6xl font-bold text-green500 animate-fade-in-down">
                 I build stuff for the web.
               </h1>
             </div>
@@ -34,13 +36,12 @@ export default function Home() {
             </p>
           </div>
         </section>
-
         <section
           id="about me"
-          className="flex justify-between  items-center text-gray-400 w-full bg-darkBlue pt-14  align-middle min-h-screen px-32"
+          className="flex flex-col md:flex-row justify-between items-center text-gray-400 w-full bg-darkBlue pt-14 pb-20 px-8 md:px-12 lg:px-24 xl:px-48"
         >
-          <div className="w-1/2">
-            <h1 className="text-7xl font-bold text-green500 opacity-50">
+          <div className="w-full md:w-1/2 mb-10 md:mb-0">
+            <h1 className="text-4xl md:text-7xl font-bold text-green500 opacity-50">
               about me
             </h1>
 
@@ -63,31 +64,47 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex flex-1 justify-end items-center ">
+          <div className="w-full md:w-1/2 flex justify-center items-center">
             <Image
               src={Myself}
               alt=" myself"
-              className=" h-auto bg-white shadow-3xl w-9/12"
+              className="h-auto bg-white shadow-3xl max-w-xs md:max-w-full"
             />
           </div>
         </section>
-
-        <section
-          id="skills and tools"
-          className="flex justify-between items-center text-gray300 w-full mt-8  align-middle min-h-screen px-32"
-        >
-          <SkillsAndTools />
-        </section>
-
-        <section
-          id="contact"
-          className="flex justify-between items-center text-gray300 w-full mt-8  bg-darkBlue  align-middle min-h-screen px-32"
-        >
-          <Contact />
-        </section>
+        <SkillsAndTools />
+        <Contact />
       </main>
-      <footer>
-        <p className="text-center">©2023 José Mauricio A. Ferreira</p>
+      <footer className="bg-gray-900 text-white py-4 px-8">
+        <div className="container mx-auto flex items-center justify-between">
+          <div>
+            <p>&copy; 2023 José Mauricio Ferreira</p>
+          </div>
+          <div>
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-gray-200 mx-2"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-gray-200 mx-2"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="mailto:youremail@example.com"
+              className="text-gray-400 hover:text-gray-200 mx-2"
+            >
+              Email
+            </a>
+          </div>
+        </div>
       </footer>
     </>
   );
